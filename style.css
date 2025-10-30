@@ -1,137 +1,102 @@
-
-/* L'arrière plan et le body */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-      background-image: url(".//images/married.jpg");
-  background-size: cover  ;
-  background-repeat: no-repeat;
-  background-position: center;
-
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-/* --- Pour le header  --- */
-header {
-    background-color: rgb(18, 176, 228);
-    color: darkblue;
-    padding: 20px 0;
+header{
+    background-color: rgb(61, 197, 172);
     text-align: center;
-
+    padding-bottom: 20px;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    margin: 0;
-}
-
-/* --- liste et naviguation --- */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0 0;
-    display: flex;
-  
-  
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-
-nav ul li a {
-    color: #333;
-}
-
-/* --- les sections et  présentations  --- */
-section.presentation {
-    padding: 60px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin:  auto;
-}
-
-section.presentation h2 {
-    font-family: 'Playfair Display', serif;
+h1{
+    padding-top: 40px;
+    padding-bottom: 15px;
     font-size: 40px;
-    color: white;
-    margin-bottom: 20px;
+    color: rgb(40, 39, 126);
 }
 
-section.presentation p {
-    font-size: 18px;
-    color:white ;
-}
-
-
-#services {
-    background-color: #fff7f3;
-    padding: 60px 20px;
+ul {
+    list-style: none;
     display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
     justify-content: center;
 }
 
-.service-card {
-    background: white;
-    border-radius: 12px;
-    max-width: 900px;
-    display: flex;
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+
+#presentation{
+    height: 40vh;
+    background: url(.//images/married.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#presentation h2{
+    padding-top: 90px;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 35px;
+}
+
+#presentation p{
+    margin: auto;
+    color: white;
+    width: 650px;
+    font-size: 20px;
+}
+
+#services{
+    background-color: rgb(162, 167, 151);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
     
 }
 
-
-
-.service-content h3 {
-    font-family: 'Playfair Display', serif;
-    color: darkblue;
-    font-size:40px;
-    margin-top: 0; 
-
-    
+.service-card img{
+    width: 70vh;
 }
 
-.service-content p {
-    font-size:17px;
-    color: #555;
+.service-card{
+    background-color: white;
+    width: 70vh;
+    margin: auto;
+    border-radius: 5%;
 }
 
-/* la section footer*/ 
+.service-content h3{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-left: 9px;
+    text-align: left;
+}
 
-footer {
-    background-color: #333;
+.service-content p{
+    margin: auto;
+    width: 68vh;
+    text-align: justify;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+
+footer{
+    background-color: rgb(3, 3, 48);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contact p{
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 12px;
 }
-
-footer p {
-    margin: 0;
-}
-
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        
-    }
-
-    .service-card {
-         flex-direction:column;
-        align-items: center;
-    }
-
-    .service-card img {
-        max-width: 100%;
-    }
-
-    .service-content {
-        padding: 20px;
-     margin: 12px;
-    }
-
-
