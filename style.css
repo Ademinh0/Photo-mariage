@@ -100,3 +100,29 @@ footer{
     color: white;
     text-align: center;
 }
+
+/* --- Smartphones (<= 768px) --- */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  #hero {
+    flex-direction: column;
+  }
+
+  .projects-contenue {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-wrapper {
+    height: 350px;
+  }
+}
